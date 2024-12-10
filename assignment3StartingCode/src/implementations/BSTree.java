@@ -6,6 +6,10 @@ import java.util.NoSuchElementException;
 import java.util.Stack;
 
 public class BSTree<E extends Comparable<? super E>> implements BSTreeADT<E> {
+	
+	private static final long serialVersionUID = 1L;
+
+	
     private BSTreeNode<E> root;
     private int size;
 
@@ -145,7 +149,6 @@ public class BSTree<E extends Comparable<? super E>> implements BSTreeADT<E> {
     private enum TraversalOrder {
         INORDER, PREORDER, POSTORDER
     }
-    
     
     
 
